@@ -1,0 +1,5 @@
+hello 
+this is a file
+which has multiple lines
+which one will be deleted?
+you'll never know!
