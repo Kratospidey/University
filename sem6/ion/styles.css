@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input[type="text"] {
+	color: black;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: 400px;
+	background: rgba(0, 0, 0, 0.3); /* Adjust the alpha for opacity */
+	border-radius: 10px; /* Adjust as needed */
+	padding: 20px; /* Adjust as needed */
+	box-shadow: 0 4px 20px rgba(150, 150, 150, 0.8); /* x-offset, y-offset, blur-radius, color */
+}
+
+#card-heading {
+	align-self: center;
+}
+
+#login-button:hover {
+	color: black;
+}
+
+#login-button {
+	padding: 0;
+	margin: 0;
+	width: 240px;
+}
+
+.servers {
+	background-color: #1e1e1e;
+	height: 97%;
+	width: 100px;
+	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.server-avatar {
+	border-radius: 80px;
+	width: 70px;
+	height: auto;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+}
+
+.sidepanel {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+	background-color: #1e1e1e;
+	height: 97%;
+	width: 200px;
+	padding: 10px;
+	border-radius: 14px;
+	margin-left: 15px;
+}
+
+.sidebuttons {
+	width: 100%;
+}
+
+.files {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.hljs {
+	font-size: 16px;
+	border: solid 2px white;
+	border-radius: 15px;
+}
+
+.active-space {
+	margin-left: 10px;
+	background-color: #1e1e1e;
+	height: 97%;
+	border-radius: 20px;
+	padding: 10px;
+	min-width: 1010px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.terminal {
+	background-color: #282828;
+	font-size: 16px;
+}
+
+.command {
+	color: #fabd2f;
+	text-shadow: 0 0 5px #fabd2f;
+}
+
+.terminal {
+	color: #ebdbb2;
+	font-family: "Courier New", monospace;
+	height: 200px;
+	padding: 10px;
+	border: solid 2px white;
+	border-radius: 20px;
+}
+
+.output {
+	color: #d3869b;
+}
+
+.members {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #1e1e1e;
+	border-radius: 20px;
+	height: 97%;
+	width: 100px;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+pre {
+	overflow-x: auto; /* Enables horizontal scrolling */
+	overflow-y: auto; /* Enables horizontal scrolling */
+	max-height: 350px; /* Adjust based on your needs */
+	width: 100%; /* Adjust if necessary */
+	white-space: pre-wrap; /* Ensures that the text respects container boundaries */
+	word-wrap: break-word; /* Breaks long words to prevent horizontal overflow */
+	margin-bottom: 10px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+pre::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+pre {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}

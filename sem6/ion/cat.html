@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-core="modern">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Ion | Cats</title>
+
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Halfmoon CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css"
+			rel="stylesheet"
+			integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M="
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/cores/halfmoon.cores.css"
+			rel="stylesheet"
+			integrity="sha256-MAzAVJMU/ze52ZHcA8CeqRrCOVndMZlHwNeS2c73vP4="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css"
+			integrity="sha512-dSQLLtgaq2iGigmy9xowRshaMzUHeiIUTvJW/SkUpb1J+ImXOPNGAI7ZC8V5/PiN/XN83B8uIk4qET7AMhdC5Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="wrapper bg-black">
+			<div class="servers">
+				<a href="cat.html"
+					><img class="server-avatar" src="img/cat.jpg" alt="PFP of a cat"
+				/></a>
+				<a href="dog.html"
+					><img class="server-avatar" src="img/dog.jpg" alt="PFP of a dog"
+				/></a>
+				<a href="monkey.html"
+					><img
+						class="server-avatar"
+						src="img/monkey.jpg"
+						alt="PFP of a monkey"
+				/></a>
+				<a href="horse.html"
+					><img class="server-avatar" src="img/horse.jpg" alt="PFP of a horse"
+				/></a>
+				<a href="capybara.html"
+					><img
+						class="server-avatar"
+						src="img/capybara.jpg"
+						alt="PFP of a capybara"
+				/></a>
+				<a href="otter.html"
+					><img class="server-avatar" src="img/otter.jpg" alt="PFP of an otter"
+				/></a>
+			</div>
+			<div class="sidepanel">
+				<button type="button" class="btn btn-dark sidebuttons">
+					Open Chat
+				</button>
+				<button type="button" class="btn btn-dark sidebuttons">
+					Open Codespace
+				</button>
+				<div class="mb-3 files">
+					<p class="h4 text-white mb-4" style="text-align: center">
+						Uploaded Files
+					</p>
+					<div class="files mb-4">
+						<button
+							type="button"
+							class="btn btn-outline-warning"
+							data-bs-toggle="tooltip"
+							data-bs-title="Uploaded by: Param, Size: 10 MB, Date: 28/01/24"
+						>
+							cats
+						</button>
+						<button
+							type="button"
+							class="btn btn-outline-warning"
+							data-bs-toggle="tooltip"
+							data-bs-title="Uploaded by: Shrijesh, Size: 7 MB, Date: 11/01/24"
+						>
+							ISCT
+						</button>
+						<button type="button" class="btn btn-outline-warning">LADE</button>
+						<button type="button" class="btn btn-outline-warning">FOS</button>
+					</div>
+					<label for="file-input" class="form-label text-white"
+						>Add a new file</label
+					>
+					<input class="form-control mb-3" type="file" id="file-input" />
+					<button type="button" class="btn btn-success">Upload File</button>
+				</div>
+			</div>
+			<div class="active-space">
+				<h4 class="display-6 text-white">Code</h4>
+				<pre style="tab-size: 4">
+					<code class="language-python">def fibonacci(n):
+	a, b = 0, 1
+	for _ in range(n):
+		yield a
+		a, b = b, a + b
+
+	n = int(input("Enter the number of terms: "))
+	print(f"First {n} Fibonacci numbers:")
+
+	for fib in fibonacci(n):
+		print(fib)</code>
+				</pre>
+				<div class="terminal">
+					<span class="command">username</span>@cats.fib.py:~$
+					<span class="output">0 1 1 2 3 5 8 13 21 34 55</span>
+				</div>
+			</div>
+			<div class="members">
+				<p class="h4 mb-4" style="text-align: center; color: #a7c7e7">Admins</p>
+				<p class="h6 text-white mb-4" style="text-align: center">Param</p>
+				<p class="h6 text-white mb-4" style="text-align: center">Yash</p>
+				<p class="h6 text-white mb-4" style="text-align: center">Shrijesh</p>
+				<p class="h4 mb-4" style="text-align: center; color: #a7c7e7">Users</p>
+				<p class="h6 text-white mb-4" style="text-align: center">User 1</p>
+				<p class="h6 text-white mb-4" style="text-align: center">User 2</p>
+				<p class="h6 text-white mb-4" style="text-align: center">User 3</p>
+				<p class="h6 text-white mb-4" style="text-align: center">User 4</p>
+				<p class="h6 text-white mb-4" style="text-align: center">User 5</p>
+			</div>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+			integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
+</html>

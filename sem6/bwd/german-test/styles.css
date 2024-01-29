@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	height: 100vh;
+	background-color: #626880;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	align-items: center;
+}
+
+.framewrapper {
+	height: 100%;
+	background-color: #626880;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	align-items: center;
+}
+
+.info_form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.framelinks a {
+	text-decoration: none;
+	color: white;
+}
+
+.framelinks {
+	display: flex;
+	gap: 10px;
+}
+
+.img {
+	width: 400px;
+	height: auto;
+}
+
+.program-list {
+	list-style-type: none;
+	justify-self: center;
+}
+
+.program-list a {
+	text-decoration: none;
+	color: #c6d0f5;
+}
+
+.course-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 6px solid #b2a29f; 
+}
+.course-table th,
+.course-table td {
+	text-align: left;
+	padding: 8px;
+}
+.course-table th {
+	background-color: #e78284;
+}
+
+.course-table tr:nth-child(odd) {
+	background-color: #a6d189;
+}
+
+.course-table tr:nth-child(even) {
+	background-color: #81c8be;
+}
+
+.info-text {
+    color: #a6d189;
+    width: 600px;
+    
+}
+
+.mainimg {
+    width: 600px;
+    height: auto;
+}
